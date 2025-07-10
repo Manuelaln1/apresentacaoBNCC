@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departamento de Inovação e Mídias Digitais</title>    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="logo2.png" alt="Logo do Departamento">
+        <img src="NTE.png" alt="Logo Adicional">
+    </div>
+
+    <div class="orbit-container">
+        <div class="center-hub" onclick="openModalAndPauseAnimations('departamento')">
+           <p>Departamento de Inovação e Mídias</p> 
+        </div>
+        
+        <div class="orbit orbit-1"></div>
+        <div class="orbit orbit-2"></div>
+        <div class="orbit orbit-4"></div>
+        <div class="orbit orbit-5"></div>
+
+        <div class="orbit orbit-3" id="main-orbit">
+            <div id="rotating-divisions-container">
+                <div class="division" onclick="openModalAndPauseAnimations('tecnologias')"> <img src="NTE.png" alt="Tecnologias Educacionais Logo"> </div>
+                
+                <div class="division" onclick="openModalAndPauseAnimations('linha-do-tempo')"> Linha do Tempo da BNCC Computação </div>
+                <div class="division" onclick="openModalAndPauseAnimations('eixos-computacao')"> Eixos da Computação </div>
+                <div class="division" onclick="openModalAndPauseAnimations('plugado-desplugado')"> Plugado e Desplugado </div>
+                <div class="division" onclick="openModalAndPauseAnimations('referencias')"> Referências </div>
+                <div class="division" onclick="openModalAndPauseAnimations('bncc-na-pratica')"> BNCC Computação na Prática </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal-departamento" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModalAndResumeAnimations()">&times;</span>
+            <div class="modal-header-logo">
+                <div class="modal-logo-container">
+                    <img src="logo2.png" alt="Logo do Departamento">
+                    <img src="NTE.png" alt="Logo Adicional">
+                </div>
+            </div>
+            <h2 class="titulo-bncc">Departamento de Inovação e Mídias Digitais</h2>
+            <p>Este departamento é responsável por impulsionar a inovação e o uso estratégico de mídias digitais na educação, desenvolvendo projetos e iniciativas que transformam o processo de ensino-aprendizagem. Nosso foco é integrar tecnologias emergentes, promover a criatividade e capacitar educadores e alunos para os desafios do futuro.</p>
+        </div>
+    </div>
+
+    <div id="modal-linha-do-tempo" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModalAndResumeAnimations()">&times;</span>
+            <div class="modal-header-logo">
+                <div class="modal-logo-container">
+                    <img src="logo2.png" alt="Logo do Departamento">
+                    <img src="NTE.png" alt="Logo Adicional">
+                </div>
+            </div>
+            <h2 class="titulo-bncc">Linha do Tempo da BNCC Computação</h2>
+            <div class="timeline-container">
+                <!-- 2017 -->
+                <div class="timeline-item bg-white rounded-xl p-6 mb-12 shadow-lg border-l-8 green-theme" style="border-color: #7aad41;">
+                    <div class="flex flex-col md:flex-row items-start md:items-center">
+                        <div class="timeline-dot mb-4 md:mb-0 md:mr-6">
+                            <div class="w-16 h-16 rounded-full flex items-center justify-center shadow-md" style="background-color: #7aad41;">
+                                <span class="text-white font-bold">2017</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="timeline-date text-2xl font-bold mb-2" style="color: #7aad41;">20 de Dezembro de 2017</h3>
+                            <p class="text-gray-800 text-lg">Homologada a BNCC para Educação Infantil e Ensino Fundamental.</p>
+                            <div class="mt-4 flex">
+                                <button class="details-btn px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center" style="background-color: rgba(122, 173, 65, 0.15); color: #7aad41;" data-id="2017">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    Mais detalhes
+                                </button>
+                            </div>
+                            <div id="details-2017" class="hidden mt-4 p-4 rounded-lg" style="background-color: rgba(122, 173, 65, 0.1);">
+                                <p class="text-gray-800">Este foi o primeiro passo oficial para a implementação da BNCC, estabelecendo as diretrizes para a Educação Infantil e o Ensino Fundamental em todo o território nacional.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 2018 -->
+                <div class="timeline-item bg-white rounded-xl p-6 mb-12 shadow-lg border-l-8 blue-theme" style="border-color: #3271a5;">
+                    <div class="flex flex-col md:flex-row items-start md:items-center">
+                        <div class="timeline-dot mb-4 md:mb-0 md:mr-6">
+                            <div class="w-16 h-16 rounded-full flex items-center justify-center shadow-md" style="background-color: #3271a5;">
+                                <span class="text-white font-bold">2018</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="timeline-date text-2xl font-bold mb-2" style="color: #3271a5;">14 de Dezembro de 2018</h3>
+                            <p class="text-gray-800 text-lg">Homologada a BNCC para o Ensino Médio.</p>
+                            <div class="mt-4 flex">
+                                <button class="details-btn px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center" style="background-color: rgba(50, 113, 165, 0.15); color: #3271a5;" data-id="2018">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    Mais detalhes
+                                </button>
+                            </div>
+                            <div id="details-2018" class="hidden mt-4 p-4 rounded-lg" style="background-color: rgba(50, 113, 165, 0.1);">
+                                <p class="text-gray-800">Complementando a BNCC anterior, esta homologação completou o ciclo da educação básica, definindo as competências e habilidades essenciais para os estudantes do Ensino Médio.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 2022 (Fevereiro) -->
+                <div class="timeline-item bg-white rounded-xl p-6 mb-12 shadow-lg border-l-8 yellow-theme" style="border-color: #ffcc03;">
+                    <div class="flex flex-col md:flex-row items-start md:items-center">
+                        <div class="timeline-dot mb-4 md:mb-0 md:mr-6">
+                            <div class="w-16 h-16 rounded-full flex items-center justify-center shadow-md" style="background-color: #ffcc03;">
+                                <span class="text-white font-bold">2022</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="timeline-date text-2xl font-bold mb-2" style="color: #ffcc03;">17 de Fevereiro de 2022</h3>
+                            <p class="text-gray-800 text-lg">Parecer CNE/CEB nº 2/2022: introduz oficialmente a BNCC Computação.</p>
+                            <div class="mt-4 flex">
+                                <button class="details-btn px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center" style="background-color: rgba(255, 204, 3, 0.15); color: #806600;" data-id="2022-fev">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    Mais detalhes
+                                </button>
+                            </div>
+                            <div id="details-2022-fev" class="hidden mt-4 p-4 rounded-lg" style="background-color: rgba(255, 204, 3, 0.1);">
+                                <p class="text-gray-800">Este parecer marca um momento histórico ao introduzir oficialmente a BNCC Computação, reconhecendo a importância do pensamento computacional e da programação na formação dos estudantes brasileiros.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 2022 (Outubro) -->
+                <div class="timeline-item bg-white rounded-xl p-6 mb-12 shadow-lg border-l-8 green-theme" style="border-color: #7aad41;">
+                    <div class="flex flex-col md:flex-row items-start md:items-center">
+                        <div class="timeline-dot mb-4 md:mb-0 md:mr-6">
+                            <div class="w-16 h-16 rounded-full flex items-center justify-center shadow-md" style="background-color: #7aad41;">
+                                <span class="text-white font-bold">2022</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="timeline-date text-2xl font-bold mb-2" style="color: #7aad41;">04 de Outubro de 2022</h3>
+                            <p class="text-gray-800 text-lg">Resolução CNE/CEB nº 1/2022: reforça normas e define habilidades em Educação Digital.</p>
+                            <div class="mt-4 flex">
+                                <button class="details-btn px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center" style="background-color: rgba(122, 173, 65, 0.15); color: #7aad41;" data-id="2022-out">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    Mais detalhes
+                                </button>
+                            </div>
+                            <div id="details-2022-out" class="hidden mt-4 p-4 rounded-lg" style="background-color: rgba(122, 173, 65, 0.1);">
+                                <p class="text-gray-800">Esta resolução consolida a implementação da BNCC Computação, detalhando as habilidades específicas em Educação Digital e estabelecendo normas para sua aplicação nas escolas brasileiras.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <div class="inline-block px-6 py-3 rounded-full font-semibold shadow-lg transition-colors cursor-pointer" id="showAllDetails" style="background-color: #3271a5; color: white;">
+                    Expandir todos os detalhes
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-eixos-computacao" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModalAndResumeAnimations()">&times;</span>
+            <div class="modal-header-logo">
+                <div class="modal-logo-container">
+                    <img src="logo2.png" alt="Logo do Departamento">
+                    <img src="NTE.png" alt="Logo Adicional">
+                </div>
+            </div>
+            <h2 class="titulo-bncc">Eixos da Computação</h2>
+            <div class="mb-12 px-4">
+                <p class="text-lg text-gray-800 leading-relaxed">
+                    <span class="font-bold" style="color: var(--green);">Computação</span>: é uma ciência que explora a teoria, o design, o desenvolvimento e a aplicação de sistemas e algoritmos, tornando-se a espinha dorsal para o avanço de diversas áreas do conhecimento e a transformação da sociedade moderna.
+                </p>
+                <p class="text-lg text-gray-800 leading-relaxed mt-4">
+                    O complemento de Computação à BNCC é dividido em três eixos principais:
+                </p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row justify-center gap-10 mb-12">
+                <div class="flex flex-col items-center">
+                    <div id="cultura-btn" class="circle-button text-xl font-bold" style="background-color: var(--green); color: white;">
+                        Cultura<br>digital
+                    </div>
+                    <div id="cultura-box" class="description-box w-full md:w-64 bg-white rounded-xl p-4 shadow-lg border-l-4" style="border-color: var(--green);">
+                        <h3 class="text-lg font-semibold mb-2 cultura">Cultura digital</h3>
+                        <p class="text-gray-800">
+                            Eixo relacionado às discussões políticas, éticas e sociais que envolvem o uso das tecnologias.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col items-center">
+                    <div id="mundo-btn" class="circle-button text-xl font-bold" style="background-color: var(--blue); color: white;">
+                        Mundo<br>digital
+                    </div>
+                    <div id="mundo-box" class="description-box w-full md:w-64 bg-white rounded-xl p-4 shadow-lg border-l-4" style="border-color: var(--blue);">
+                        <h3 class="text-lg font-semibold mb-2 mundo">Mundo digital</h3>
+                        <p class="text-gray-800">
+                            Trata da compreensão do mundo digital, com habilidades relacionadas ao funcionamento técnico da internet, das redes, da computação em nuvem e de diversos outros elementos do universo virtual.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col items-center">
+                    <div id="pensamento-btn" class="circle-button text-xl font-bold" style="background-color: var(--yellow); color: white;">
+                        Pensamento<br>computacional
+                    </div>
+                    <div id="pensamento-box" class="description-box w-full md:w-64 bg-white rounded-xl p-4 shadow-lg border-l-4" style="border-color: var(--yellow);">
+                        <h3 class="text-lg font-semibold mb-2 pensamento">Pensamento computacional</h3>
+                        <p class="text-gray-800">
+                            Aborda o raciocínio lógico e a construção de soluções para os mais diversos problemas. As habilidades referentes a esse eixo incluem a descrição de processos, organização e sistematização de informações, entre outros.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 px-4">
+                <p class="text-lg text-gray-800 leading-relaxed">
+                    O novo documento propõe desenvolver habilidades computacionais, ligadas principalmente ao raciocínio lógico, e também preparar crianças e jovens para viver em um mundo cada vez mais digital, onde questões como privacidade, disseminação de fake news e proteção de dados estão cada vez mais em pauta e exigem um olhar crítico.
+                </p>
+                <p class="text-lg font-medium mt-4" style="color: var(--blue);">
+                    Importante no mundo atual, não é mesmo?
+                </p>
+            </div>
+            </div>
+    </div>
+
+    <div id="modal-plugado-desplugado" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModalAndResumeAnimations()">&times;</span>
+            <div class="modal-header-logo">
+                <div class="modal-logo-container">
+                    <img src="logo2.png" alt="Logo do Departamento">
+                    <img src="NTE.png" alt="Logo Adicional">
+                </div>
+            </div>
+            <h2 class="titulo-bncc">Plugado e Desplugado</h2>
+            <div class="flex flex-col md:flex-row justify-center gap-8 mb-12">
+                <div class="flex flex-col items-center max-w-xs">
+                    <button id="plugado-tab" class="circle-button text-xl font-bold mb-4" style="background-color: var(--green); color: white;">
+                        PLUGADO
+                    </button>
+                    <p class="text-center text-gray-700 text-base description-text">
+                        São aquelas que necessitam de dispositivos eletrônicos como computadores, tablets, celulares ou outros equipamentos conectados à internet. Envolvem o uso direto de tecnologias digitais para criar, simular, interagir ou programar.
+                    </p>
+                </div>
+                <div class="flex flex-col items-center max-w-xs">
+                    <button id="desplugado-tab" class="circle-button text-xl font-bold mb-4" style="background-color: var(--blue); color: white;">
+                        DESPLUGADO
+                    </button>
+                    <p class="text-center text-gray-700 text-base description-text">
+                        São atividades sem o uso de dispositivos tecnológicos, nas quais os conceitos da Computação são trabalhados de maneira concreta, analógica ou simbólica, por meio de jogos, papel e lápis, dinâmicas corporais, desafios lógicos, entre outros recursos físicos.
+                    </p>
+                </div>
+            </div>
+            
+            <div id="initial-message" class="text-center p-10 bg-white rounded-xl shadow-lg">
+                <p class="text-xl">Clique em PLUGADO ou DESPLUGADO para ver as categorias e exemplos</p>
+            </div>
+            
+            <div class="content-container">
+                <div id="plugado-content" class="tab-content bg-white rounded-xl p-6 shadow-lg mb-8 border-l-8 hidden" style="border-color: var(--green);">
+                    <h2 class="text-3xl font-bold mb-6 text-center" style="color: var(--green);">Atividades Plugadas</h2>
+                    
+                    <div class="category-container mb-4">
+                        <div class="category-header flex items-center p-4" style="background-color: rgba(122, 173, 65, 0.1);">
+                            <div class="arrow mr-3" id="arrow-plugado-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--green)" viewBox="0 0 16 16">
+                                    <path d="m6 12 4-4-4-4V12z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold cidadania">➤ Cidadania digital</h3>
+                        </div>
+                        <div class="category-content" id="content-plugado-1">
+                            <p class="pl-10 pr-4 text-gray-800 border-l-4 ml-2" style="border-color: var(--green);">
+                                Criação de postagens, vídeos ou apresentações digitais com ferramentas como Canva ou Padlet, abordando temas como segurança digital, privacidade e cidadania online.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="category-container mb-4">
+                        <div class="category-header flex items-center p-4" style="background-color: rgba(50, 113, 165, 0.1);">
+                            <div class="arrow mr-3" id="arrow-plugado-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--blue)" viewBox="0 0 16 16">
+                                    <path d="m6 12 4-4-4-4V12z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold mundo">➤ Mundo digital</h3>
+                        </div>
+                        <div class="category-content" id="content-plugado-2">
+                            <p class="pl-10 pr-4 text-gray-800 border-l-4 ml-2" style="border-color: var(--blue);">
+                                Exploração de softwares e plataformas como Tinkercad para criação de circuitos simples, uso de editores de texto e planilhas, ou ambientação em ferramentas como Google Sala de Aula.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="category-container mb-4">
+                        <div class="category-header flex items-center p-4" style="background-color: rgba(255, 204, 3, 0.1);">
+                            <div class="arrow mr-3" id="arrow-plugado-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--yellow)" viewBox="0 0 16 16">
+                                    <path d="m6 12 4-4-4-4V12z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold pensamento">➤ Pensamento computacional</h3>
+                        </div>
+                        <div class="category-content" id="content-plugado-3">
+                            <p class="pl-10 pr-4 text-gray-800 border-l-4 ml-2" style="border-color: var(--yellow);">
+                                Uso de plataformas como Scratch, Code.org e Lightbot para programação de personagens com comandos de sequência, repetição e condição.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desplugado Content -->
+                <div id="desplugado-content" class="tab-content bg-white rounded-xl p-6 shadow-lg mb-8 border-l-8 hidden" style="border-color: var(--blue);">
+                    <h2 class="text-3xl font-bold mb-6 text-center" style="color: var(--blue);">Atividades Desplugadas</h2>
+                    
+                    <div class="category-container mb-4">
+                        <div class="category-header flex items-center p-4" style="background-color: rgba(122, 173, 65, 0.1);">
+                            <div class="arrow mr-3" id="arrow-desplugado-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--green)" viewBox="0 0 16 16">
+                                    <path d="m6 12 4-4-4-4V12z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold cidadania">➤ Cidadania digital</h3>
+                        </div>
+                        <div class="category-content" id="content-desplugado-1">
+                            <p class="pl-10 pr-4 text-gray-800 border-l-4 ml-2" style="border-color: var(--green);">
+                                Debates em grupo sobre fake news, privacidade de dados ou cyberbullying, utilizando cartões com cenários para discussão e dramatização.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="category-container mb-4">
+                        <div class="category-header flex items-center p-4" style="background-color: rgba(50, 113, 165, 0.1);">
+                            <div class="arrow mr-3" id="arrow-desplugado-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--blue)" viewBox="0 0 16 16">
+                                    <path d="m6 12 4-4-4-4V12z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold mundo">➤ Mundo digital</h3>
+                        </div>
+                        <div class="category-content" id="content-desplugado-2">
+                            <p class="pl-10 pr-4 text-gray-800 border-l-4 ml-2" style="border-color: var(--blue);">
+                                Construção de maquetes de redes de computadores com barbantes e caixas, ou jogos de tabuleiro que simulem o fluxo de informações na internet.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="category-container mb-4">
+                        <div class="category-header flex items-center p-4" style="background-color: rgba(255, 204, 3, 0.1);">
+                            <div class="arrow mr-3" id="arrow-desplugado-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--yellow)" viewBox="0 0 16 16">
+                                    <path d="m6 12 4-4-4-4V12z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold pensamento">➤ Pensamento computacional</h3>
+                        </div>
+                        <div class="category-content" id="content-desplugado-3">
+                            <p class="pl-10 pr-4 text-gray-800 border-l-4 ml-2" style="border-color: var(--yellow);">
+                                Jogos de lógica com cartas, quebra-cabeças de sequência de comandos, ou atividades de "robótica" com instruções de movimento para um colega.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row justify-center gap-8 mb-12">
+                <div class="w-full md:w-1/2 p-4">
+                    <svg class="w-full h-auto rounded-lg shadow-md" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="400" height="250" fill="#f8f9fa" />
+                        <circle cx="200" cy="100" r="50" fill="var(--green)" opacity="0.7" />
+                        <rect x="150" y="100" width="100" height="100" fill="var(--blue)" opacity="0.7" />
+                        <polygon points="200,50 250,150 150,150" fill="var(--yellow)" opacity="0.7" />
+                        <text x="200" y="220" text-anchor="middle" font-family="Montserrat" font-size="16" fill="#495057">Atividades Educacionais</text>
+                    </svg>
+                </div>
+                <div class="w-full md:w-1/2 p-4">
+                    <svg class="w-full h-auto rounded-lg shadow-md" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="400" height="250" fill="#f8f9fa" />
+                        <rect x="100" y="75" width="200" height="100" rx="10" fill="#e9ecef" />
+                        <circle cx="150" cy="125" r="25" fill="var(--green)" opacity="0.7" />
+                        <circle cx="200" cy="125" r="25" fill="var(--blue)" opacity="0.7" />
+                        <circle cx="250" cy="125" r="25" fill="var(--yellow)" opacity="0.7" />
+                        <text x="200" y="220" text-anchor="middle" font-family="Montserrat" font-size="16" fill="#495057">BNCC Computação</text>
+                    </svg>
+                </div>
+            </div>
+            </div>
+    </div>
+
+    <div id="modal-referencias" class="modal">
+        <div class="modal-content min-h-[500px]">
+            <span class="close-btn" onclick="closeModalAndResumeAnimations()">&times;</span>
+            <div class="modal-header-logo">
+                <div class="modal-logo-container">
+                    <img src="logo2.png" alt="Logo do Departamento">
+                    <img src="NTE.png" alt="Logo Adicional">
+                </div>
+            </div>
+            <!-- New References Content -->
+            <div class="page-container" style="background: linear-gradient(135deg, rgba(122, 173, 65, 0.1) 0%, rgba(50, 113, 165, 0.15) 100%); min-height: 100%; padding: 2rem; border-radius: 20px; box-sizing: border-box;">
+                <!-- Decorative glowing effects -->
+                <div class="glow-effect glow-green"></div>
+                <div class="glow-effect glow-blue"></div>
+                <div class="glow-effect glow-yellow"></div>
+                
+                <div class="main-card">
+                    <div class="p-6">
+                        <div class="flex justify-center mb-8">
+                            <h2 class="titulo-bncc">Referências Bibliográficas</h2>
+                        </div>
+                        
+                        <div class="space-y-8">
+                            <!-- Reference 1 -->
+                            <div class="reference-card green">
+                                <div class="reference-content">
+                                    <div class="flex items-start">
+                                        <div class="reference-icon icon-bg-green">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
+                                            </svg>
+                                        </div>
+                                        <div class="flex-1">
+                                            <span class="reference-type type-official">Documento Oficial</span>
+                                            <h3 class="text-lg font-medium text-green mb-2">Ministério da Educação</h3>
+                                            <p class="text-gray-700 mb-3">BRASIL. Ministério da Educação. Referencial da Base Nacional Comum Curricular – Computação. Brasília: MEC, 2022. Disponível em: https://basenacionalcomum.mec.gov.br. Acesso em: 07 jul. 2025.</p>
+                                            <div class="flex items-center justify-end">
+                                                <a href="https://basenacionalcomum.mec.gov.br" target="_blank" class="link-button link-green">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                                                    </svg>
+                                                    Acessar documento
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Reference 2 -->
+                            <div class="reference-card blue">
+                                <div class="reference-content">
+                                    <div class="flex items-start">
+                                        <div class="reference-icon icon-bg-blue">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
+                                            </svg>
+                                        </div>
+                                        <div class="flex-1">
+                                            <span class="reference-type type-resource">Plataforma Educacional</span>
+                                            <h3 class="text-lg font-medium text-blue mb-2">Computacional</h3>
+                                            <p class="text-gray-700 mb-3">COMPUTACIONAL. Computação na educação básica. Disponível em: https://www.computacional.com.br/. Acesso em: 07 jul. 2025.</p>
+                                            <div class="flex items-center justify-end">
+                                                <a href="https://www.computacional.com.br/" target="_blank" class="link-button link-blue">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                                                    </svg>
+                                                    Visitar plataforma
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Reference 3 -->
+                            <div class="reference-card yellow">
+                                <div class="reference-content">
+                                    <div class="flex items-start">
+                                        <div class="reference-icon icon-bg-yellow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" />
+                                            </svg>
+                                        </div>
+                                        <div class="flex-1">
+                                            <span class="reference-type type-article">Artigo</span>
+                                            <h3 class="text-lg font-medium text-yellow mb-2">Nova Escola</h3>
+                                            <p class="text-gray-700 mb-3">NOVA ESCOLA. Entenda a BNCC Computacional e a tecnologia na educação. Disponível em: https://novaescola.org.br/conteudo/21884/entenda-bncc-computacional-tecnologia-educacao. Acesso em: 07 jul. 2025.</p>
+                                            <div class="flex items-center justify-end">
+                                                <a href="https://novaescola.org.br/conteudo/21884/entenda-bncc-computacional-tecnologia-educacao" target="_blank" class="link-button link-yellow">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                                                    </svg>
+                                                    Ler artigo
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Reference 4 -->
+                            <div class="reference-card green">
+                                <div class="reference-content">
+                                    <div class="flex items-start">
+                                        <div class="reference-icon icon-bg-green">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                            </svg>
+                                        </div>
+                                        <div class="flex-1">
+                                            <span class="reference-type type-resource">Observatório</span>
+                                            <h3 class="text-lg font-medium text-green mb-2">Movimento Pela Base</h3>
+                                            <p class="text-gray-700 mb-3">OBSERVATÓRIO MOVIMENTO PELA BASE. BNCC Computação: entenda o que é e como será implementada. Disponível em: https://observatorio.movimentopelabase.org.br/computacao-bncc-live-mpb-ftv/. Acesso em: 07 jul. 2025.</p>
+                                            <div class="flex items-center justify-end">
+                                                <a href="https://observatorio.movimentopelabase.org.br/computacao-bncc-live-mpb-ftv/" target="_blank" class="link-button link-green">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                                                    </svg>
+                                                    Acessar conteúdo
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Reference 5 -->
+                            <div class="reference-card blue">
+                                <div class="reference-content">
+                                    <div class="flex items-start">
+                                        <div class="reference-icon icon-bg-blue">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" />
+                                            </svg>
+                                        </div>
+                                        <div class="flex-1">
+                                            <span class="reference-type type-article">Artigo</span>
+                                            <h3 class="text-lg font-medium text-blue mb-2">Revista Educação</h3>
+                                            <p class="text-gray-700 mb-3">REVISTA EDUCAÇÃO. Implementar a BNCC da Computação: os desafios e próximos passos. 11 out. 2024. Disponível em: https://revistaeducacao.com.br/2024/10/11/implementar-bncc-da-computacao/. Acesso em: 07 jul. 2025.</p>
+                                            <div class="flex items-center justify-end">
+                                                <a href="https://revistaeducacao.com.br/2024/10/11/implementar-bncc-da-computacao/" target="_blank" class="link-button link-blue">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                                                    </svg>
+                                                    Ler artigo
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End New References Content -->
+        </div>
+    </div>
+    
+    <div id="modal-tecnologias" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModalAndResumeAnimations()">&times;</span>
+            <div class="modal-header-logo">
+                <div class="modal-nte-logo-container mr-4">
+                    <img src="NTE.png" alt="Logo do NTE">
+                </div>
+                <div class="modal-logo-container">
+                    <img src="logo2.png" alt="Logo do Departamento">
+                    <img src="NTE.png" alt="Logo Adicional">
+                </div>
+            </div>
+            <h2 class="titulo-bncc">Divisão de Tecnologias Educacionais</h2>
+            <p>Realização de práticas inovadoras que facilitem a aprendizagem, incentivo ao uso de ferramentas tecnológicas educacionais e suporte pedagógico.</p>
+            <h3 class="font-semibold">Ações Realizadas</h3>
+            <ul class="list-disc">
+                <li>Oficinas sobre: Uso da Inteligência Artificial</li>
+                <li>Plataformas Digitais Educacionais</li>
+                <li>Gamificação</li>
+                <li>Workshop para Professores sobre Cidadania Digital</li>
+                <li>Palestras para alunos sobre Cidadania Digital</li>
+            </ul>
+            <h3 class="font-semibold">Fotos das Ações</h3>
+            <div id="photos-tecnologias" class="photo-gallery">
+                <div class="photo-item"> <img src="https://placehold.co/1300x700/009D2F/ffffff?text=Tecnologias+Educacionais+1" alt="Tecnologias Educacionais 1"> </div>
+                <div class="photo-item"> <img src="https://placehold.co/1300x700/F7E700/333333?text=Tecnologias+Educacionais+2" alt="Tecnologias Educacionais 2"> </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal-ambiental" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModalAndResumeAnimations()">&times;</span>
+            <div class="modal-header-logo">
+                <div class="modal-logo-container">
+                    <img src="logo2.png" alt="Logo do Departamento">
+                    <img src="NTE.png" alt="Logo Adicional">
+                </div>
+            </div>
+            <h2 class="titulo-bncc">Divisão de Educação Ambiental</h2>
+            <p>Desenvolvimento de ações pedagógicas, promovendo processos formativos que fortaleçam a consciência crítica, o protagonismo social e a construção coletiva de valores, saberes e práticas voltadas à sustentabilidade.</p>
+            <h3 class="font-semibold">Ações Realizadas</h3>
+            <ul class="list-disc">
+                <li>Projeto Escola Sustentável</li>
+                <li>Oficinas de Reciclagem e Reaproveitamento</li>
+                <li>Seminários sobre Preservação Ambiental</li>
+                <li>Hortas Escolares Comunitárias</li>
+                <li>Campanhas de Conscientização Ecológica</li>
+            </ul>
+            <h3 class="font-semibold">Números de Atendimentos (até junho)</h3>
+            <div class="stats">
+                <div class="stat-box"> <div class="stat-number">980</div> <div class="stat-label">Alunos</div> </div>
+                <div class="stat-box"> <div class="stat-number">42</div> <div class="stat-label">Equipes de Professores</div> </div>
+            </div>
+            <h3 class="font-semibold">Fotos das Ações</h3>
+            <div id="photos-ambiental" class="photo-gallery">
+                <div class="photo-item"> <img src="https://placehold.co/1300x700/009D2F/ffffff?text=Educa%C3%A7%C3%A3o+Ambiental+1" alt="Educação Ambiental 1"> </div>
+                <div class="photo-item"> <img src="https://placehold.co/1300x700/F7E700/333333?text=Educa%C3%A7%C3%A3o+Ambiental+2" alt="Educação Ambiental 2"> </div>
+                <div class="photo-item"> <img src="https://placehold.co/1300x700/009D2F/ffffff?text=Educa%C3%A7%C3%A3o+Ambiental+3" alt="Educação Ambiental 3"> </div>
+                <div class="photo-item"> <img src="https://placehold.co/1300x700/F7E700/333333?text=Educa%C3%A7%C3%A3o+Ambiental+4" alt="Educação Ambiental 4"> </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-inovacoes" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModalAndResumeAnimations()">&times;</span>
+            <div class="modal-header-logo">
+                <div class="modal-logo-container">
+                    <img src="logo2.png" alt="Logo do Departamento">
+                    <img src="NTE.png" alt="Logo Adicional">
+                </div>
+            </div>
+            <h2 class="titulo-bncc">Divisão de Inovações Educacionais</h2>
+            <p>Realização de experiências escolares que envolvam a cultura maker, laboratórios criativos, gamificação, realidade aumentada, ambientes virtuais de aprendizagem e outras tecnologias emergentes.</p>
+            <h3 class="font-semibold">Estrutura</h3>
+            <p>Composta por: Núcleo de Incentivo ao Conhecimento, Núcleo de Automação e Robótica Educacional e Núcleo de Matemática e Ciências Aplicadas.</p>
+            <h3 class="font-semibold">Ações Realizadas</h3>
+            <ul class="list-disc">
+                <li>Laboratórios de Robótica nas Escolas</li>
+                <li>Hackathons Educacionais</li>
+                <li>Olimpíadas de Programação</li>
+                <li>Feiras de Ciências e Tecnologia</li>
+                <li>Capacitação em Metodologias Ativas</li>
+            </ul>
+            <h3 class="font-semibold">Números de Atendimentos (até junho)</h3>
+            <div class="stats">
+                <div class="stat-box"> <div class="stat-number">1.450</div> <div class="stat-label">Alunos</div> </div>
+                <div class="stat-box"> <div class="stat-number">65</div> <div class="stat-label">Equipes de Professores</div> </div>
+            </div>
+            <h3 class="font-semibold">Fotos das Ações</h3>
+            <div id="photos-inovacoes" class="photo-gallery">
+                <div class="photo-item"> <img src="https://placehold.co/1300x700/009D2F/ffffff?text=Inova%C3%A7%C3%B5es+Educacionais+1" alt="Inovações Educacionais 1"> </div>
+                <div class="photo-item"> <img src="https://placehold.co/1300x700/F7E700/333333?text=Inova%C3%A7%C3%B5es+Educacionais+2" alt="Inovações Educacionais 2"> </div>
+                <div class="photo-item"> <img src="https://placehold.co/1300x700/009D2F/ffffff?text=Inova%C3%A7%C3%B5es+Educacionais+3" alt="Inovações Educacionais 3"> </div>
+                <div class="photo-item"> <img src="https://placehold.co/1300x700/F7E700/333333?text=Inova%C3%A7%C3%A3o%C3%B5es+Educacionais+4" alt="Inovações Educacionais 4"> </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-midias" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModalAndResumeAnimations()">&times;</span>
+            <div class="modal-header-logo">
+                <div class="modal-logo-container">
+                    <img src="logo2.png" alt="Logo do Departamento">
+                    <img src="NTE.png" alt="Logo Adicional">
+                </div>
+            </div>
+            <h2 class="titulo-bncc">Divisão de Mídias Digitais</h2>
+            <p>Produção e gestão de conteúdos digitais, estratégias de comunicação e gravação de aulas virtuais, com o objetivo de ampliar o acesso ao ensino e fortalecer a cultura digital no ambiente educacional.</p>
+            <h3 class="font-semibold">Estrutura</h3>
+            <p>Composta por: Núcleo de Incentivo ao Conhecimento, Núcleo de Automação e Robótica Educacional e Núcleo de Matemática e Ciências Aplicadas.</p>
+            <ul class="list-disc">
+                <li>Produção de Videoaulas</li>
+                <li>Criação de Podcasts Educativos</li>
+                <li>Desenvolvimento de Plataformas de Ensino Digital</li>
+                <li>Capacitação em Produção de Conteúdo Digital</li>
+                <li>Gestão de Redes Sociais Educativas</li>
+            </ul>
+            <h3 class="font-semibold">Números de Atendimentos (até junho)</h3>
+            <div class="stats">
+                <div class="stat-box"> <div class="stat-number">2.100</div> <div class="stat-label">Alunos</div> </div>
+                <div class="stat-box"> <div class="stat-number">95</div> <div class="stat-label">Equipes de Professores</div> </div>
+            </div>
+            <h3 class="font-semibold">Fotos das Ações</h3>
+            <div id="photos-midias" class="photo-gallery">
+                <div class="photo-item"> <img src="https://placehold.co/1300x700/009D2F/ffffff?text=M%C3%ADdias+Digitais+1" alt="Mídias Digitais 1"> </div>
+                <div class="photo-item"> <img src="https://placehold.co/1300x700/F7E700/333333?text=M%C3%ADdias+Digitais+2" alt="Mídias Digitais 2"> </div>
+                <div class="photo-item"> <img src="https://placehold.co/1300x700/009D2F/ffffff?text=M%C3%ADdias+Digitais+3" alt="Mídias Digitais 3"> </div>
+                <div class="photo-item"> <img src="https://placehold.co/1300x700/F7E700/333333?text=M%C3%ADdias+Digitais+4" alt="Mídias Digitais 4"> </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal-viverciencia" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModalAndResumeAnimations()">&times;</span>
+            <div class="modal-header-logo">
+                <div class="modal-logo-container">
+                    <img src="logo2.png" alt="Logo do Departamento">
+                    <img src="NTE.png" alt="Logo Adicional">
+                </div>
+            </div>
+            <h2 class="titulo-bncc">Viver Ciência</h2>
+            <p>A Mostra Científica Viver Ciência é uma ação desenvolvida por este departamento em conjunto com outros departamentos da Secretaria Estadual de Educação que visa mostrar os projetos científicos que são realizados pelos alunos e seus professores, iniciando os mesmos na produção da ciência.</p>
+            <h3 class="font-semibold">Objetivos do Programa</h3>
+            <ul class="list-disc">
+                <li>Incentivar a pesquisa científica nas escolas</li>
+                <li>Promover a integração entre alunos e professores</li>
+                <li>Desenvolver o pensamento crítico e científico</li>
+                <li>Valorizar projetos inovadores</li>
+                <li>Criar uma cultura de investigação científica</li>
+            </ul>
+            <h3 class="font-semibold">Resultados</h3>
+            <div class="stats">
+                <div class="stat-box"> <div class="stat-number">120</div> <div class="stat-label">Projetos Apresentados</div> </div>
+                <div class="stat-box"> <div class="stat-number">45</div> <div class="stat-label">Escolas Participantes</div> </div>
+                <div class="stat-box"> <div class="stat-number">3.200</div> <div class="stat-label">Visitantes</div> </div>
+            </div>
+            <h3 class="font-semibold">Fotos das Ações</h3>
+            <div id="photos-viverciencia" class="photo-gallery">
+                <div class="photo-item"> <img src="https://placehold.co/1300x700/009D2F/ffffff?text=Viver+Ci%C3%AAncia+1" alt="Viver Ciência 1"> </div>
+                <div class="photo-item"> <img src="https://placehold.co/1300x700/F7E700/333333?text=Viver+Ci%C3%AAncia+2" alt="Viver Ciência 2"> </div>
+                <div class="photo-item"> <img src="https://placehold.co/1300x700/009D2F/ffffff?text=Viver+Ci%C3%AAncia+3" alt="Viver Ciência 3"> </div>
+                <div class="photo-item"> <img src="https://placehold.co/1300x700/F7E700/333333?text=Viver+Ci%C3%AAncia+4" alt="Viver Ciência 4"> </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal BNCC Computação na Prática -->
+    <div id="modal-bncc-na-pratica" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModalAndResumeAnimations()">&times;</span>
+            <div class="modal-header-logo">
+                <div class="modal-logo-container">
+                    <img src="logo2.png" alt="Logo do Departamento">
+                    <img src="NTE.png" alt="Logo Adicional">
+                </div>
+            </div>
+            <h2 class="titulo-bncc">BNCC Computação na Prática</h2>
+            <p class="text-lg text-gray-800 leading-relaxed mb-8 text-center">
+                A BNCC Computação na Prática visa integrar o pensamento computacional e a cultura digital ao currículo escolar, preparando os alunos para os desafios do mundo moderno.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card Cultura Digital -->
+                <div class="card bg-white rounded-xl p-6 shadow-lg border-l-4 cultura">
+                    <h3 class="text-2xl font-bold mb-4 cultura">Cultura Digital</h3>
+                    <ul class="bullet-list text-gray-800">
+                        <li>Uso responsável e ético da tecnologia.</li>
+                        <li>Compreensão dos impactos sociais da internet.</li>
+                        <li>Segurança online e privacidade de dados.</li>
+                    </ul>
+                </div>
+
+                <!-- Card Mundo Digital -->
+                <div class="card bg-white rounded-xl p-6 shadow-lg border-l-4 mundo">
+                    <h3 class="text-2xl font-bold mb-4 mundo">Mundo Digital</h3>
+                    <ul class="bullet-list text-gray-800">
+                        <li>Funcionamento de redes e sistemas.</li>
+                        <li>Exploração de ferramentas digitais.</li>
+                        <li>Noções de hardware e software.</li>
+                    </ul>
+                </div>
+
+                <!-- Card Pensamento Computacional -->
+                <div class="card bg-white rounded-xl p-6 shadow-lg border-l-4 pensamento">
+                    <h3 class="text-2xl font-bold mb-4 pensamento">Pensamento Computacional</h3>
+                    <ul class="bullet-list text-gray-800">
+                        <li>Resolução de problemas de forma lógica.</li>
+                        <li>Desenvolvimento de algoritmos.</li>
+                        <li>Programação e codificação.</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="text-lg font-medium mt-8 text-center" style="color: var(--green);">
+                Preparando os alunos para um futuro cada vez mais conectado!
+            </p>
+        </div>
+    </div>
+
+    <script src = "script.js"></script>
+</body>
+</html>
