@@ -22,7 +22,6 @@ function openModalAndPauseAnimations(id) {
             item.style.transform = 'translateY(0)';
         });
     }
-
     // Initialize Plugado e Desplugado modal state
     if (id === 'plugado-desplugado') {
         document.getElementById('initial-message').classList.remove('hidden');
