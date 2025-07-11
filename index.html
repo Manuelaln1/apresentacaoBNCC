@@ -10,12 +10,14 @@
 <body>
     <div class="logo-container">
         <img src="logo2.png" alt="Logo do Departamento">
+        
+    </div>
+    <div class="logo-container2">
         <img src="NTE.png" alt="Logo Adicional">
     </div>
-
     <div class="orbit-container">
         <div class="center-hub" onclick="openModalAndPauseAnimations('departamento')">
-           <p>Departamento de Inovação e Mídias</p> 
+           <img src="BNCC.png" alt="Logo BNCC" class="logo-bncc">
         </div>
         
         <div class="orbit orbit-1"></div>
@@ -30,8 +32,8 @@
                 <div class="division" onclick="openModalAndPauseAnimations('linha-do-tempo')"> Linha do Tempo da BNCC Computação </div>
                 <div class="division" onclick="openModalAndPauseAnimations('eixos-computacao')"> Eixos da Computação </div>
                 <div class="division" onclick="openModalAndPauseAnimations('plugado-desplugado')"> Plugado e Desplugado </div>
-                <div class="division" onclick="openModalAndPauseAnimations('referencias')"> Referências </div>
                 <div class="division" onclick="openModalAndPauseAnimations('bncc-na-pratica')"> BNCC Computação na Prática </div>
+                <div class="division" onclick="openModalAndPauseAnimations('referencias')"> Referências </div>
             </div>
         </div>
     </div>
@@ -61,7 +63,6 @@
             </div>
             <h2 class="titulo-bncc">Linha do Tempo da BNCC Computação</h2>
             <div class="timeline-container">
-                <!-- 2017 -->
                 <div class="timeline-item bg-white rounded-xl p-6 mb-12 shadow-lg border-l-8 green-theme" style="border-color: #7aad41;">
                     <div class="flex flex-col md:flex-row items-start md:items-center">
                         <div class="timeline-dot mb-4 md:mb-0 md:mr-6">
@@ -87,7 +88,6 @@
                     </div>
                 </div>
                 
-                <!-- 2018 -->
                 <div class="timeline-item bg-white rounded-xl p-6 mb-12 shadow-lg border-l-8 blue-theme" style="border-color: #3271a5;">
                     <div class="flex flex-col md:flex-row items-start md:items-center">
                         <div class="timeline-dot mb-4 md:mb-0 md:mr-6">
@@ -113,7 +113,6 @@
                     </div>
                 </div>
                 
-                <!-- 2022 (Fevereiro) -->
                 <div class="timeline-item bg-white rounded-xl p-6 mb-12 shadow-lg border-l-8 yellow-theme" style="border-color: #ffcc03;">
                     <div class="flex flex-col md:flex-row items-start md:items-center">
                         <div class="timeline-dot mb-4 md:mb-0 md:mr-6">
@@ -139,7 +138,6 @@
                     </div>
                 </div>
                 
-                <!-- 2022 (Outubro) -->
                 <div class="timeline-item bg-white rounded-xl p-6 mb-12 shadow-lg border-l-8 green-theme" style="border-color: #7aad41;">
                     <div class="flex flex-col md:flex-row items-start md:items-center">
                         <div class="timeline-dot mb-4 md:mb-0 md:mr-6">
@@ -194,11 +192,11 @@
             </div>
             
             <div class="flex flex-col md:flex-row justify-center gap-10 mb-12">
-                <div class="flex flex-col items-center">
-                    <div id="cultura-btn" class="circle-button text-xl font-bold" style="background-color: var(--green); color: white;">
-                        Cultura<br>digital
+                <div class="flex flex-col items-center flex-1 max-w-xs">
+                    <div id="cultura-btn" class="circle-button text-xl font-bold" style="background-color: var(--green); color: white; width: 350px; height: 350px; font-size: 60px;">
+                        Cultura<br><br>digital
                     </div>
-                    <div id="cultura-box" class="description-box w-full md:w-64 bg-white rounded-xl p-4 shadow-lg border-l-4" style="border-color: var(--green);">
+                    <div id="cultura-box" class="description-box w-full md:w-64 bg-white rounded-xl p-4 shadow-lg border-l-4" style="border-color: var(--green); width: 600px;">
                         <h3 class="text-lg font-semibold mb-2 cultura">Cultura digital</h3>
                         <p class="text-gray-800">
                             Eixo relacionado às discussões políticas, éticas e sociais que envolvem o uso das tecnologias.
@@ -206,11 +204,11 @@
                     </div>
                 </div>
                 
-                <div class="flex flex-col items-center">
-                    <div id="mundo-btn" class="circle-button text-xl font-bold" style="background-color: var(--blue); color: white;">
-                        Mundo<br>digital
+                <div class="flex flex-col items-center flex-1 max-w-xs">
+                    <div id="mundo-btn" class="circle-button text-xl font-bold" style="background-color: var(--blue); color: white; width: 350px; height: 350px; font-size: 60px;">
+                        Mundo<br><br>digital
                     </div>
-                    <div id="mundo-box" class="description-box w-full md:w-64 bg-white rounded-xl p-4 shadow-lg border-l-4" style="border-color: var(--blue);">
+                    <div id="mundo-box" class="description-box w-full md:w-64 bg-white rounded-xl p-4 shadow-lg border-l-4" style="border-color: var(--blue); width: 600px;">
                         <h3 class="text-lg font-semibold mb-2 mundo">Mundo digital</h3>
                         <p class="text-gray-800">
                             Trata da compreensão do mundo digital, com habilidades relacionadas ao funcionamento técnico da internet, das redes, da computação em nuvem e de diversos outros elementos do universo virtual.
@@ -218,11 +216,11 @@
                     </div>
                 </div>
                 
-                <div class="flex flex-col items-center">
-                    <div id="pensamento-btn" class="circle-button text-xl font-bold" style="background-color: var(--yellow); color: white;">
-                        Pensamento<br>computacional
+                <div class="flex flex-col items-center flex-1 max-w-xs">
+                    <div id="pensamento-btn" class="circle-button text-xl font-bold" style="background-color: var(--yellow); color: white; width: 365px; height: 350px; font-size: 50px;">
+                        Pensamento<br><br>computacional
                     </div>
-                    <div id="pensamento-box" class="description-box w-full md:w-64 bg-white rounded-xl p-4 shadow-lg border-l-4" style="border-color: var(--yellow);">
+                    <div id="pensamento-box" class="description-box w-full md:w-64 bg-white rounded-xl p-4 shadow-lg border-l-4" style="border-color: var(--yellow); width: 600px;">
                         <h3 class="text-lg font-semibold mb-2 pensamento">Pensamento computacional</h3>
                         <p class="text-gray-800">
                             Aborda o raciocínio lógico e a construção de soluções para os mais diversos problemas. As habilidades referentes a esse eixo incluem a descrição de processos, organização e sistematização de informações, entre outros.
@@ -251,163 +249,155 @@
                     <img src="NTE.png" alt="Logo Adicional">
                 </div>
             </div>
-            <h2 class="titulo-bncc">Plugado e Desplugado</h2>
-            <div class="flex flex-col md:flex-row justify-center gap-8 mb-12">
-                <div class="flex flex-col items-center max-w-xs">
-                    <button id="plugado-tab" class="circle-button text-xl font-bold mb-4" style="background-color: var(--green); color: white;">
+            <div class="container mx-auto px-4 py-12 max-w-6xl">
+                <header class="text-center mb-12">
+                    <h1 class="main-title">BNCC COMPUTAÇÃO</h1>
+                    <div class="title-underline"></div>
+                </header>
+                
+                <div class="button-container">
+                    <button id="plugado-tab" class="circle-button" style="--color: #7aad41; background-color: #7aad41; color: white; width: 400px; height: 400px; font-size: 60px;">
                         PLUGADO
                     </button>
-                    <p class="text-center text-gray-700 text-base description-text">
-                        São aquelas que necessitam de dispositivos eletrônicos como computadores, tablets, celulares ou outros equipamentos conectados à internet. Envolvem o uso direto de tecnologias digitais para criar, simular, interagir ou programar.
-                    </p>
-                </div>
-                <div class="flex flex-col items-center max-w-xs">
-                    <button id="desplugado-tab" class="circle-button text-xl font-bold mb-4" style="background-color: var(--blue); color: white;">
+                    <button id="desplugado-tab" class="circle-button" style="--color: #3271a5; background-color: #3271a5; color: white;width: 400px; height: 400px; font-size: 60px;">
                         DESPLUGADO
                     </button>
-                    <p class="text-center text-gray-700 text-base description-text">
-                        São atividades sem o uso de dispositivos tecnológicos, nas quais os conceitos da Computação são trabalhados de maneira concreta, analógica ou simbólica, por meio de jogos, papel e lápis, dinâmicas corporais, desafios lógicos, entre outros recursos físicos.
-                    </p>
+                </div>
+                
+                <div id="initial-message" class="text-center text-gray-600 text-lg mb-8">
+                </div>
+                
+                <div class="content-container">
+                    <div id="plugado-content" class="tab-content content-card border-l-8 hidden" style="border-color: #7aad41;">
+                        <h2 class="text-4xl font-bold mb-6 text-center" style="color: #7aad41; font-size: 70px;">Atividades Plugadas</h2>
+                        
+                        <p class="description-text text-center text-gray-700 mx-auto max-w-3xl" style="font-size: 25px;">
+                            São aquelas que necessitam de dispositivos eletrônicos como computadores, tablets, celulares ou outros equipamentos conectados à internet. Envolvem o uso direto de tecnologias digitais para criar, simular, interagir ou programar.
+                        </p>
+                        
+                        <div class="category-container mb-6 border rounded-xl overflow-hidden shadow-sm">
+                            <div class="category-header flex items-center p-5" style="background-color: rgba(122, 173, 65, 0.1);">
+                                <div class="arrow mr-4" id="arrow-plugado-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#7aad41" viewBox="0 0 16 16">
+                                        <path d="m6 12 4-4-4-4V12z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-2xl font-semibold cidadania"> Cidadania digital</h3>
+                            </div>
+                            <div class="category-content" id="content-plugado-1">
+                                <div class="p-5 bg-white">
+                                    <p class="pl-10 pr-4 text-gray-800 border-l-4 ml-2 text-lg" style="border-color: #7aad41;">
+                                        Criação de postagens, vídeos ou apresentações digitais com ferramentas como Canva ou Padlet, abordando temas como segurança digital, privacidade e cidadania online.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="category-container mb-6 border rounded-xl overflow-hidden shadow-sm">
+                            <div class="category-header flex items-center p-5" style="background-color: rgba(50, 113, 165, 0.1); align-items: center;">
+                                <div class="arrow mr-4" id="arrow-plugado-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#3271a5" viewBox="0 0 16 16">
+                                        <path d="m6 12 4-4-4-4V12z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-2xl font-semibold mundo" > Mundo digital</h3>
+                            </div>
+                            <div class="category-content" id="content-plugado-2">
+                                <div class="p-5 bg-white">
+                                    <p class="pl-10 pr-4 text-gray-800 border-l-4 ml-2 text-lg" style="border-color: #3271a5;">
+                                        Exploração de softwares e plataformas como Tinkercad para criação de circuitos simples, uso de editores de texto e planilhas, ou ambientação em ferramentas como Google Sala de Aula.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="category-container mb-6 border rounded-xl overflow-hidden shadow-sm">
+                            <div class="category-header flex items-center p-5" style="background-color: rgba(255, 204, 3, 0.1);">
+                                <div class="arrow mr-4" id="arrow-plugado-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffcc03" viewBox="0 0 16 16">
+                                        <path d="m6 12 4-4-4-4V12z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-2xl font-semibold pensamento"> Pensamento computacional</h3>
+                            </div>
+                            <div class="category-content" id="content-plugado-3">
+                                <div class="p-5 bg-white">
+                                    <p class="pl-10 pr-4 text-gray-800 border-l-4 ml-2 text-lg" style="border-color: #ffcc03;">
+                                        Uso de plataformas como Scratch, Code.org e Lightbot para programação de personagens com comandos de sequência, repetição e condição.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="desplugado-content" class="tab-content content-card border-l-8 hidden" style="border-color: #3271a5;">
+                        <h2 class="text-4xl font-bold mb-6 text-center" style="color: #3271a5;">Atividades Desplugadas</h2>
+                        
+                        <p class="description-text text-center text-gray-700 mx-auto max-w-3xl">
+                            São atividades sem o uso de dispositivos tecnológicos, nas quais os conceitos da Computação são trabalhados de maneira concreta, analógica ou simbólica, por meio de jogos, papel e lápis, dinâmicas corporais, desafios lógicos, entre outros recursos físicos.
+                        </p>
+                        
+                        <div class="category-container mb-6 border rounded-xl overflow-hidden shadow-sm">
+                            <div class="category-header flex items-center p-5" style="background-color: rgba(122, 173, 65, 0.1);">
+                                <div class="arrow mr-4" id="arrow-desplugado-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#7aad41" viewBox="0 0 16 16">
+                                        <path d="m6 12 4-4-4-4V12z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-2xl font-semibold cidadania">➤ Cidadania digital</h3>
+                            </div>
+                            <div class="category-content" id="content-desplugado-1">
+                                <div class="p-5 bg-white">
+                                    <p class="pl-10 pr-4 text-gray-800 border-l-4 ml-2 text-lg" style="border-color: #7aad41;">
+                                        Roda de conversa sobre comportamento nas redes sociais, ética digital, e análise de fake news usando recortes de jornais e revistas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="category-container mb-6 border rounded-xl overflow-hidden shadow-sm">
+                            <div class="category-header flex items-center p-5" style="background-color: rgba(50, 113, 165, 0.1);">
+                                <div class="arrow mr-4" id="arrow-desplugado-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#3271a5" viewBox="0 0 16 16">
+                                        <path d="m6 12 4-4-4-4V12z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-2xl font-semibold mundo">➤ Mundo digital</h3>
+                            </div>
+                            <div class="category-content" id="content-desplugado-2">
+                                <div class="p-5 bg-white">
+                                    <p class="pl-10 pr-4 text-gray-800 border-l-4 ml-2 text-lg" style="border-color: #3271a5;">
+                                        Simulação do funcionamento da internet, onde os alunos representam pacotes de dados circulando entre "servidores" e "usuários", ou atividades com cartazes explicando partes de um computador.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="category-container mb-6 border rounded-xl overflow-hidden shadow-sm">
+                            <div class="category-header flex items-center p-5" style="background-color: rgba(255, 204, 3, 0.1);">
+                                <div class="arrow mr-4" id="arrow-desplugado-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffcc03" viewBox="0 0 16 16">
+                                        <path d="m6 12 4-4-4-4V12z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-2xl font-semibold pensamento">➤ Pensamento computacional</h3>
+                            </div>
+                            <div class="category-content" id="content-desplugado-3">
+                                <div class="p-5 bg-white">
+                                    <p class="pl-10 pr-4 text-gray-800 border-l-4 ml-2 text-lg" style="border-color: #ffcc03;">
+                                        Criação de algoritmos com comandos em papel, como "programar" um colega a seguir um caminho com base em instruções simples, ou jogos de lógica e padrões (ex: dobraduras, sequências).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
-            <div id="initial-message" class="text-center p-10 bg-white rounded-xl shadow-lg">
-                <p class="text-xl">Clique em PLUGADO ou DESPLUGADO para ver as categorias e exemplos</p>
-            </div>
-            
-            <div class="content-container">
-                <div id="plugado-content" class="tab-content bg-white rounded-xl p-6 shadow-lg mb-8 border-l-8 hidden" style="border-color: var(--green);">
-                    <h2 class="text-3xl font-bold mb-6 text-center" style="color: var(--green);">Atividades Plugadas</h2>
-                    
-                    <div class="category-container mb-4">
-                        <div class="category-header flex items-center p-4" style="background-color: rgba(122, 173, 65, 0.1);">
-                            <div class="arrow mr-3" id="arrow-plugado-1">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--green)" viewBox="0 0 16 16">
-                                    <path d="m6 12 4-4-4-4V12z"/>
-                                </svg>
-                            </div>
-                            <h3 class="text-xl font-semibold cidadania">➤ Cidadania digital</h3>
-                        </div>
-                        <div class="category-content" id="content-plugado-1">
-                            <p class="pl-10 pr-4 text-gray-800 border-l-4 ml-2" style="border-color: var(--green);">
-                                Criação de postagens, vídeos ou apresentações digitais com ferramentas como Canva ou Padlet, abordando temas como segurança digital, privacidade e cidadania online.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="category-container mb-4">
-                        <div class="category-header flex items-center p-4" style="background-color: rgba(50, 113, 165, 0.1);">
-                            <div class="arrow mr-3" id="arrow-plugado-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--blue)" viewBox="0 0 16 16">
-                                    <path d="m6 12 4-4-4-4V12z"/>
-                                </svg>
-                            </div>
-                            <h3 class="text-xl font-semibold mundo">➤ Mundo digital</h3>
-                        </div>
-                        <div class="category-content" id="content-plugado-2">
-                            <p class="pl-10 pr-4 text-gray-800 border-l-4 ml-2" style="border-color: var(--blue);">
-                                Exploração de softwares e plataformas como Tinkercad para criação de circuitos simples, uso de editores de texto e planilhas, ou ambientação em ferramentas como Google Sala de Aula.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="category-container mb-4">
-                        <div class="category-header flex items-center p-4" style="background-color: rgba(255, 204, 3, 0.1);">
-                            <div class="arrow mr-3" id="arrow-plugado-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--yellow)" viewBox="0 0 16 16">
-                                    <path d="m6 12 4-4-4-4V12z"/>
-                                </svg>
-                            </div>
-                            <h3 class="text-xl font-semibold pensamento">➤ Pensamento computacional</h3>
-                        </div>
-                        <div class="category-content" id="content-plugado-3">
-                            <p class="pl-10 pr-4 text-gray-800 border-l-4 ml-2" style="border-color: var(--yellow);">
-                                Uso de plataformas como Scratch, Code.org e Lightbot para programação de personagens com comandos de sequência, repetição e condição.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Desplugado Content -->
-                <div id="desplugado-content" class="tab-content bg-white rounded-xl p-6 shadow-lg mb-8 border-l-8 hidden" style="border-color: var(--blue);">
-                    <h2 class="text-3xl font-bold mb-6 text-center" style="color: var(--blue);">Atividades Desplugadas</h2>
-                    
-                    <div class="category-container mb-4">
-                        <div class="category-header flex items-center p-4" style="background-color: rgba(122, 173, 65, 0.1);">
-                            <div class="arrow mr-3" id="arrow-desplugado-1">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--green)" viewBox="0 0 16 16">
-                                    <path d="m6 12 4-4-4-4V12z"/>
-                                </svg>
-                            </div>
-                            <h3 class="text-xl font-semibold cidadania">➤ Cidadania digital</h3>
-                        </div>
-                        <div class="category-content" id="content-desplugado-1">
-                            <p class="pl-10 pr-4 text-gray-800 border-l-4 ml-2" style="border-color: var(--green);">
-                                Debates em grupo sobre fake news, privacidade de dados ou cyberbullying, utilizando cartões com cenários para discussão e dramatização.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="category-container mb-4">
-                        <div class="category-header flex items-center p-4" style="background-color: rgba(50, 113, 165, 0.1);">
-                            <div class="arrow mr-3" id="arrow-desplugado-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--blue)" viewBox="0 0 16 16">
-                                    <path d="m6 12 4-4-4-4V12z"/>
-                                </svg>
-                            </div>
-                            <h3 class="text-xl font-semibold mundo">➤ Mundo digital</h3>
-                        </div>
-                        <div class="category-content" id="content-desplugado-2">
-                            <p class="pl-10 pr-4 text-gray-800 border-l-4 ml-2" style="border-color: var(--blue);">
-                                Construção de maquetes de redes de computadores com barbantes e caixas, ou jogos de tabuleiro que simulem o fluxo de informações na internet.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="category-container mb-4">
-                        <div class="category-header flex items-center p-4" style="background-color: rgba(255, 204, 3, 0.1);">
-                            <div class="arrow mr-3" id="arrow-desplugado-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--yellow)" viewBox="0 0 16 16">
-                                    <path d="m6 12 4-4-4-4V12z"/>
-                                </svg>
-                            </div>
-                            <h3 class="text-xl font-semibold pensamento">➤ Pensamento computacional</h3>
-                        </div>
-                        <div class="category-content" id="content-desplugado-3">
-                            <p class="pl-10 pr-4 text-gray-800 border-l-4 ml-2" style="border-color: var(--yellow);">
-                                Jogos de lógica com cartas, quebra-cabeças de sequência de comandos, ou atividades de "robótica" com instruções de movimento para um colega.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="flex flex-col md:flex-row justify-center gap-8 mb-12">
-                <div class="w-full md:w-1/2 p-4">
-                    <svg class="w-full h-auto rounded-lg shadow-md" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="400" height="250" fill="#f8f9fa" />
-                        <circle cx="200" cy="100" r="50" fill="var(--green)" opacity="0.7" />
-                        <rect x="150" y="100" width="100" height="100" fill="var(--blue)" opacity="0.7" />
-                        <polygon points="200,50 250,150 150,150" fill="var(--yellow)" opacity="0.7" />
-                        <text x="200" y="220" text-anchor="middle" font-family="Montserrat" font-size="16" fill="#495057">Atividades Educacionais</text>
-                    </svg>
-                </div>
-                <div class="w-full md:w-1/2 p-4">
-                    <svg class="w-full h-auto rounded-lg shadow-md" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="400" height="250" fill="#f8f9fa" />
-                        <rect x="100" y="75" width="200" height="100" rx="10" fill="#e9ecef" />
-                        <circle cx="150" cy="125" r="25" fill="var(--green)" opacity="0.7" />
-                        <circle cx="200" cy="125" r="25" fill="var(--blue)" opacity="0.7" />
-                        <circle cx="250" cy="125" r="25" fill="var(--yellow)" opacity="0.7" />
-                        <text x="200" y="220" text-anchor="middle" font-family="Montserrat" font-size="16" fill="#495057">BNCC Computação</text>
-                    </svg>
-                </div>
-            </div>
-            </div>
+        </div>
     </div>
 
-    <div id="modal-referencias" class="modal">
-        <div class="modal-content min-h-[500px]">
+    <div id="modal-bncc-na-pratica" class="modal">
+        <div class="modal-content">
             <span class="close-btn" onclick="closeModalAndResumeAnimations()">&times;</span>
             <div class="modal-header-logo">
                 <div class="modal-logo-container">
@@ -415,9 +405,69 @@
                     <img src="NTE.png" alt="Logo Adicional">
                 </div>
             </div>
-            <!-- New References Content -->
+            <h2 class="titulo-bncc">BNCC Computação na Prática</h2>
+            <p class="text-lg text-gray-800 leading-relaxed mb-8 text-center">
+                A BNCC Computação na Prática visa integrar o pensamento computacional e a cultura digital ao currículo escolar, preparando os alunos para os desafios do mundo moderno.
+            </p>
+
+            <div class="flex flex-col md:flex-row justify-center gap-10 mb-12">
+                <div class="flex flex-col items-center flex-1 max-w-xs">
+                    <div id="bncc-cultura-btn" class="circle-button text-xl font-bold" style="background-color: var(--green); color: white; width: 350px; height: 350px; font-size: 60px;">
+                        Cultura<br><br>Digital
+                    </div>
+                    <div id="bncc-cultura-box" class="description-box w-full md:w-64 bg-white rounded-xl p-4 shadow-lg border-l-4" style="border-color: var(--green); width: 600px;">
+                        <h3 class="text-lg font-semibold mb-2 cultura">Cultura Digital</h3>
+                        <ul class="bullet-list text-gray-800">
+                            <li>Análise de fake news e checagem de fontes em aulas de leitura ou atualidades.</li>
+                            <li>Discussão sobre segurança digital e comportamento ético nas redes sociais.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center flex-1 max-w-xs">
+                    <div id="bncc-mundo-btn" class="circle-button text-xl font-bold" style="background-color: var(--blue); color: white; width: 350px; height: 350px; font-size: 60px;">
+                        Mundo<br><br>Digital
+                    </div>
+                    <div id="bncc-mundo-box" class="description-box w-full md:w-64 bg-white rounded-xl p-4 shadow-lg border-l-4" style="border-color: var(--blue); width: 600px;">
+                        <h3 class="text-lg font-semibold mb-2 mundo">Mundo Digital</h3>
+                        <ul class="bullet-list text-gray-800">
+                            <li>Atividade sobre como funcionam buscadores e aplicativos.</li>
+                            <li>Produção de infográficos com ferramentas online (ex: Canva) sobre temas da disciplina.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center flex-1 max-w-xs">
+                    <div id="bncc-pensamento-btn" class="circle-button text-xl font-bold" style="background-color: var(--yellow); color: white;width: 360px; height: 350px; font-size: 50px;">
+                        Pensamento<br><br>Computacional
+                    </div>
+                    <div id="bncc-pensamento-box" class="description-box w-full md:w-64 bg-white rounded-xl p-4 shadow-lg border-l-4" style="border-color: var(--yellow); width: 600px;">
+                        <h3 class="text-lg font-semibold mb-2 pensamento">Pensamento Computacional</h3>
+                        <ul class="bullet-list text-gray-800">
+                            <li>Jogos de lógica como damas e xadrez, que exigem estratégia e antecipação.</li>
+                            <li>Labirintos e quebra-cabeças, que trabalham raciocínio lógico e decomposição de problemas.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="text-lg font-medium mt-8 text-center" style="color: var(--green);">
+                Preparando os alunos para um futuro cada vez mais conectado!
+            </p>
+        </div>
+    </div>
+
+    <div id="modal-referencias" class="modal">
+        <div class="modal-content min-h-[500px]">
+            <span class="close-btn" onclick="closeModalAndResumeAnimations()">&times;</span>
+            <div class="modal-header-logo">
+                <div class="modal-nte-logo-container mr-4">
+                </div>
+                <div class="modal-logo-container">
+                    <img src="logo2.png" alt="Logo do Departamento">
+                    <img src="NTE.png" alt="Logo Adicional">
+                </div>
+            </div>
             <div class="page-container" style="background: linear-gradient(135deg, rgba(122, 173, 65, 0.1) 0%, rgba(50, 113, 165, 0.15) 100%); min-height: 100%; padding: 2rem; border-radius: 20px; box-sizing: border-box;">
-                <!-- Decorative glowing effects -->
                 <div class="glow-effect glow-green"></div>
                 <div class="glow-effect glow-blue"></div>
                 <div class="glow-effect glow-yellow"></div>
@@ -429,7 +479,6 @@
                         </div>
                         
                         <div class="space-y-8">
-                            <!-- Reference 1 -->
                             <div class="reference-card green">
                                 <div class="reference-content">
                                     <div class="flex items-start">
@@ -455,7 +504,6 @@
                                 </div>
                             </div>
                             
-                            <!-- Reference 2 -->
                             <div class="reference-card blue">
                                 <div class="reference-content">
                                     <div class="flex items-start">
@@ -481,7 +529,6 @@
                                 </div>
                             </div>
                             
-                            <!-- Reference 3 -->
                             <div class="reference-card yellow">
                                 <div class="reference-content">
                                     <div class="flex items-start">
@@ -507,7 +554,6 @@
                                 </div>
                             </div>
                             
-                            <!-- Reference 4 -->
                             <div class="reference-card green">
                                 <div class="reference-content">
                                     <div class="flex items-start">
@@ -534,7 +580,6 @@
                                 </div>
                             </div>
                             
-                            <!-- Reference 5 -->
                             <div class="reference-card blue">
                                 <div class="reference-content">
                                     <div class="flex items-start">
@@ -563,8 +608,7 @@
                     </div>
                 </div>
             </div>
-            <!-- End New References Content -->
-        </div>
+            </div>
     </div>
     
     <div id="modal-tecnologias" class="modal">
@@ -572,220 +616,33 @@
             <span class="close-btn" onclick="closeModalAndResumeAnimations()">&times;</span>
             <div class="modal-header-logo">
                 <div class="modal-nte-logo-container mr-4">
-                    <img src="NTE.png" alt="Logo do NTE">
                 </div>
                 <div class="modal-logo-container">
                     <img src="logo2.png" alt="Logo do Departamento">
                     <img src="NTE.png" alt="Logo Adicional">
                 </div>
             </div>
-            <h2 class="titulo-bncc">Divisão de Tecnologias Educacionais</h2>
+            <h2 class="titulo-bncc">Núcleo de Tecnologias Educacionais</h2>
             <p>Realização de práticas inovadoras que facilitem a aprendizagem, incentivo ao uso de ferramentas tecnológicas educacionais e suporte pedagógico.</p>
-            <h3 class="font-semibold">Ações Realizadas</h3>
+            <h3 class="font-semibold">Ações NTE</h3>
             <ul class="list-disc">
-                <li>Oficinas sobre: Uso da Inteligência Artificial</li>
-                <li>Plataformas Digitais Educacionais</li>
-                <li>Gamificação</li>
-                <li>Workshop para Professores sobre Cidadania Digital</li>
-                <li>Palestras para alunos sobre Cidadania Digital</li>
+                <li>Oficina de Inteligência Artificial para professores;</li>
+                <li>Oficina de Canva para professores;</li>
+                <li>Oficina de Metodologias Ativas com ferramentas digitais;</li>
+                <li>Workshop: “Cidadania Digital e Segurança na Internet;</li>
+                <li>Palestra: Cidadania Digital e Ética na Internet.</li>
             </ul>
             <h3 class="font-semibold">Fotos das Ações</h3>
             <div id="photos-tecnologias" class="photo-gallery">
-                <div class="photo-item"> <img src="https://placehold.co/1300x700/009D2F/ffffff?text=Tecnologias+Educacionais+1" alt="Tecnologias Educacionais 1"> </div>
-                <div class="photo-item"> <img src="https://placehold.co/1300x700/F7E700/333333?text=Tecnologias+Educacionais+2" alt="Tecnologias Educacionais 2"> </div>
+                <div class="photo-item"> <img src="foto1.jpeg"> </div>
+                <div class="photo-item"> <img src="foto2.jpeg"> </div>
+                <div class="photo-item"> <img src="foto3.jpeg"> </div>
+                <div class="photo-item"> <img src="foto4.jpeg"> </div>
+                <div class="photo-item"> <img src="foto5.jpeg"> </div>
+                <div class="photo-item"> <img src="foto6.jpeg"> </div>
+                <div class="photo-item"> <img src="foto7.jpeg"> </div>
+                <div class="photo-item"> <img src="foto8.jpeg"> </div>
             </div>
-        </div>
-    </div>
-    
-    <div id="modal-ambiental" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" onclick="closeModalAndResumeAnimations()">&times;</span>
-            <div class="modal-header-logo">
-                <div class="modal-logo-container">
-                    <img src="logo2.png" alt="Logo do Departamento">
-                    <img src="NTE.png" alt="Logo Adicional">
-                </div>
-            </div>
-            <h2 class="titulo-bncc">Divisão de Educação Ambiental</h2>
-            <p>Desenvolvimento de ações pedagógicas, promovendo processos formativos que fortaleçam a consciência crítica, o protagonismo social e a construção coletiva de valores, saberes e práticas voltadas à sustentabilidade.</p>
-            <h3 class="font-semibold">Ações Realizadas</h3>
-            <ul class="list-disc">
-                <li>Projeto Escola Sustentável</li>
-                <li>Oficinas de Reciclagem e Reaproveitamento</li>
-                <li>Seminários sobre Preservação Ambiental</li>
-                <li>Hortas Escolares Comunitárias</li>
-                <li>Campanhas de Conscientização Ecológica</li>
-            </ul>
-            <h3 class="font-semibold">Números de Atendimentos (até junho)</h3>
-            <div class="stats">
-                <div class="stat-box"> <div class="stat-number">980</div> <div class="stat-label">Alunos</div> </div>
-                <div class="stat-box"> <div class="stat-number">42</div> <div class="stat-label">Equipes de Professores</div> </div>
-            </div>
-            <h3 class="font-semibold">Fotos das Ações</h3>
-            <div id="photos-ambiental" class="photo-gallery">
-                <div class="photo-item"> <img src="https://placehold.co/1300x700/009D2F/ffffff?text=Educa%C3%A7%C3%A3o+Ambiental+1" alt="Educação Ambiental 1"> </div>
-                <div class="photo-item"> <img src="https://placehold.co/1300x700/F7E700/333333?text=Educa%C3%A7%C3%A3o+Ambiental+2" alt="Educação Ambiental 2"> </div>
-                <div class="photo-item"> <img src="https://placehold.co/1300x700/009D2F/ffffff?text=Educa%C3%A7%C3%A3o+Ambiental+3" alt="Educação Ambiental 3"> </div>
-                <div class="photo-item"> <img src="https://placehold.co/1300x700/F7E700/333333?text=Educa%C3%A7%C3%A3o+Ambiental+4" alt="Educação Ambiental 4"> </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="modal-inovacoes" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" onclick="closeModalAndResumeAnimations()">&times;</span>
-            <div class="modal-header-logo">
-                <div class="modal-logo-container">
-                    <img src="logo2.png" alt="Logo do Departamento">
-                    <img src="NTE.png" alt="Logo Adicional">
-                </div>
-            </div>
-            <h2 class="titulo-bncc">Divisão de Inovações Educacionais</h2>
-            <p>Realização de experiências escolares que envolvam a cultura maker, laboratórios criativos, gamificação, realidade aumentada, ambientes virtuais de aprendizagem e outras tecnologias emergentes.</p>
-            <h3 class="font-semibold">Estrutura</h3>
-            <p>Composta por: Núcleo de Incentivo ao Conhecimento, Núcleo de Automação e Robótica Educacional e Núcleo de Matemática e Ciências Aplicadas.</p>
-            <h3 class="font-semibold">Ações Realizadas</h3>
-            <ul class="list-disc">
-                <li>Laboratórios de Robótica nas Escolas</li>
-                <li>Hackathons Educacionais</li>
-                <li>Olimpíadas de Programação</li>
-                <li>Feiras de Ciências e Tecnologia</li>
-                <li>Capacitação em Metodologias Ativas</li>
-            </ul>
-            <h3 class="font-semibold">Números de Atendimentos (até junho)</h3>
-            <div class="stats">
-                <div class="stat-box"> <div class="stat-number">1.450</div> <div class="stat-label">Alunos</div> </div>
-                <div class="stat-box"> <div class="stat-number">65</div> <div class="stat-label">Equipes de Professores</div> </div>
-            </div>
-            <h3 class="font-semibold">Fotos das Ações</h3>
-            <div id="photos-inovacoes" class="photo-gallery">
-                <div class="photo-item"> <img src="https://placehold.co/1300x700/009D2F/ffffff?text=Inova%C3%A7%C3%B5es+Educacionais+1" alt="Inovações Educacionais 1"> </div>
-                <div class="photo-item"> <img src="https://placehold.co/1300x700/F7E700/333333?text=Inova%C3%A7%C3%B5es+Educacionais+2" alt="Inovações Educacionais 2"> </div>
-                <div class="photo-item"> <img src="https://placehold.co/1300x700/009D2F/ffffff?text=Inova%C3%A7%C3%B5es+Educacionais+3" alt="Inovações Educacionais 3"> </div>
-                <div class="photo-item"> <img src="https://placehold.co/1300x700/F7E700/333333?text=Inova%C3%A7%C3%A3o%C3%B5es+Educacionais+4" alt="Inovações Educacionais 4"> </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="modal-midias" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" onclick="closeModalAndResumeAnimations()">&times;</span>
-            <div class="modal-header-logo">
-                <div class="modal-logo-container">
-                    <img src="logo2.png" alt="Logo do Departamento">
-                    <img src="NTE.png" alt="Logo Adicional">
-                </div>
-            </div>
-            <h2 class="titulo-bncc">Divisão de Mídias Digitais</h2>
-            <p>Produção e gestão de conteúdos digitais, estratégias de comunicação e gravação de aulas virtuais, com o objetivo de ampliar o acesso ao ensino e fortalecer a cultura digital no ambiente educacional.</p>
-            <h3 class="font-semibold">Estrutura</h3>
-            <p>Composta por: Núcleo de Incentivo ao Conhecimento, Núcleo de Automação e Robótica Educacional e Núcleo de Matemática e Ciências Aplicadas.</p>
-            <ul class="list-disc">
-                <li>Produção de Videoaulas</li>
-                <li>Criação de Podcasts Educativos</li>
-                <li>Desenvolvimento de Plataformas de Ensino Digital</li>
-                <li>Capacitação em Produção de Conteúdo Digital</li>
-                <li>Gestão de Redes Sociais Educativas</li>
-            </ul>
-            <h3 class="font-semibold">Números de Atendimentos (até junho)</h3>
-            <div class="stats">
-                <div class="stat-box"> <div class="stat-number">2.100</div> <div class="stat-label">Alunos</div> </div>
-                <div class="stat-box"> <div class="stat-number">95</div> <div class="stat-label">Equipes de Professores</div> </div>
-            </div>
-            <h3 class="font-semibold">Fotos das Ações</h3>
-            <div id="photos-midias" class="photo-gallery">
-                <div class="photo-item"> <img src="https://placehold.co/1300x700/009D2F/ffffff?text=M%C3%ADdias+Digitais+1" alt="Mídias Digitais 1"> </div>
-                <div class="photo-item"> <img src="https://placehold.co/1300x700/F7E700/333333?text=M%C3%ADdias+Digitais+2" alt="Mídias Digitais 2"> </div>
-                <div class="photo-item"> <img src="https://placehold.co/1300x700/009D2F/ffffff?text=M%C3%ADdias+Digitais+3" alt="Mídias Digitais 3"> </div>
-                <div class="photo-item"> <img src="https://placehold.co/1300x700/F7E700/333333?text=M%C3%ADdias+Digitais+4" alt="Mídias Digitais 4"> </div>
-            </div>
-        </div>
-    </div>
-    
-    <div id="modal-viverciencia" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" onclick="closeModalAndResumeAnimations()">&times;</span>
-            <div class="modal-header-logo">
-                <div class="modal-logo-container">
-                    <img src="logo2.png" alt="Logo do Departamento">
-                    <img src="NTE.png" alt="Logo Adicional">
-                </div>
-            </div>
-            <h2 class="titulo-bncc">Viver Ciência</h2>
-            <p>A Mostra Científica Viver Ciência é uma ação desenvolvida por este departamento em conjunto com outros departamentos da Secretaria Estadual de Educação que visa mostrar os projetos científicos que são realizados pelos alunos e seus professores, iniciando os mesmos na produção da ciência.</p>
-            <h3 class="font-semibold">Objetivos do Programa</h3>
-            <ul class="list-disc">
-                <li>Incentivar a pesquisa científica nas escolas</li>
-                <li>Promover a integração entre alunos e professores</li>
-                <li>Desenvolver o pensamento crítico e científico</li>
-                <li>Valorizar projetos inovadores</li>
-                <li>Criar uma cultura de investigação científica</li>
-            </ul>
-            <h3 class="font-semibold">Resultados</h3>
-            <div class="stats">
-                <div class="stat-box"> <div class="stat-number">120</div> <div class="stat-label">Projetos Apresentados</div> </div>
-                <div class="stat-box"> <div class="stat-number">45</div> <div class="stat-label">Escolas Participantes</div> </div>
-                <div class="stat-box"> <div class="stat-number">3.200</div> <div class="stat-label">Visitantes</div> </div>
-            </div>
-            <h3 class="font-semibold">Fotos das Ações</h3>
-            <div id="photos-viverciencia" class="photo-gallery">
-                <div class="photo-item"> <img src="https://placehold.co/1300x700/009D2F/ffffff?text=Viver+Ci%C3%AAncia+1" alt="Viver Ciência 1"> </div>
-                <div class="photo-item"> <img src="https://placehold.co/1300x700/F7E700/333333?text=Viver+Ci%C3%AAncia+2" alt="Viver Ciência 2"> </div>
-                <div class="photo-item"> <img src="https://placehold.co/1300x700/009D2F/ffffff?text=Viver+Ci%C3%AAncia+3" alt="Viver Ciência 3"> </div>
-                <div class="photo-item"> <img src="https://placehold.co/1300x700/F7E700/333333?text=Viver+Ci%C3%AAncia+4" alt="Viver Ciência 4"> </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal BNCC Computação na Prática -->
-    <div id="modal-bncc-na-pratica" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" onclick="closeModalAndResumeAnimations()">&times;</span>
-            <div class="modal-header-logo">
-                <div class="modal-logo-container">
-                    <img src="logo2.png" alt="Logo do Departamento">
-                    <img src="NTE.png" alt="Logo Adicional">
-                </div>
-            </div>
-            <h2 class="titulo-bncc">BNCC Computação na Prática</h2>
-            <p class="text-lg text-gray-800 leading-relaxed mb-8 text-center">
-                A BNCC Computação na Prática visa integrar o pensamento computacional e a cultura digital ao currículo escolar, preparando os alunos para os desafios do mundo moderno.
-            </p>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Card Cultura Digital -->
-                <div class="card bg-white rounded-xl p-6 shadow-lg border-l-4 cultura">
-                    <h3 class="text-2xl font-bold mb-4 cultura">Cultura Digital</h3>
-                    <ul class="bullet-list text-gray-800">
-                        <li>Uso responsável e ético da tecnologia.</li>
-                        <li>Compreensão dos impactos sociais da internet.</li>
-                        <li>Segurança online e privacidade de dados.</li>
-                    </ul>
-                </div>
-
-                <!-- Card Mundo Digital -->
-                <div class="card bg-white rounded-xl p-6 shadow-lg border-l-4 mundo">
-                    <h3 class="text-2xl font-bold mb-4 mundo">Mundo Digital</h3>
-                    <ul class="bullet-list text-gray-800">
-                        <li>Funcionamento de redes e sistemas.</li>
-                        <li>Exploração de ferramentas digitais.</li>
-                        <li>Noções de hardware e software.</li>
-                    </ul>
-                </div>
-
-                <!-- Card Pensamento Computacional -->
-                <div class="card bg-white rounded-xl p-6 shadow-lg border-l-4 pensamento">
-                    <h3 class="text-2xl font-bold mb-4 pensamento">Pensamento Computacional</h3>
-                    <ul class="bullet-list text-gray-800">
-                        <li>Resolução de problemas de forma lógica.</li>
-                        <li>Desenvolvimento de algoritmos.</li>
-                        <li>Programação e codificação.</li>
-                    </ul>
-                </div>
-            </div>
-            <p class="text-lg font-medium mt-8 text-center" style="color: var(--green);">
-                Preparando os alunos para um futuro cada vez mais conectado!
-            </p>
         </div>
     </div>
 
