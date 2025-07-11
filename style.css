@@ -227,7 +227,7 @@ body {
 
 /* Estilo específico para o título dentro do center-hub para corresponder à imagem */
 .center-hub p {
-    font-size: 60px; /* Ajuste conforme necessário para o tamanho do texto na imagem */
+    font-size: 70px; /* Ajuste conforme necessário para o tamanho do texto na imagem */
     font-family: 'Open Sans', sans-serif; /* Usando Montserrat para o título central */
     font-weight: 400; /* Mais espesso para corresponder à imagem */
     line-height: 1.1; /* Ajustar o espaçamento entre linhas */
@@ -292,7 +292,7 @@ body {
     backdrop-filter: blur(5px);
     border: 1px solid  #009D2F;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 40px;
     font-family: 'Open Sans', sans-serif;
     color: #007C24;
 
